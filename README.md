@@ -9,6 +9,6 @@ Stampiamo delle card contenenti i dettagli dei prodotti, come immagine, titolo, 
 
 === 
 **Svolgimento**
-- 
+- Definisco una classe "Product" generica con 5 proprietà, incluso uno sconto fisso del 20% che si applica a ogni prodotto scontato (valore 1)
 - 
 - 
