@@ -2,9 +2,9 @@
 
 class Race {
 
-    public array $race;
+    public $race = [];
 
-    function __construct(string $_race){
+    function __construct($_race){
  
       $this->race = $_race;
   }
