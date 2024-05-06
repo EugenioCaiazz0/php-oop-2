@@ -1,7 +1,6 @@
 <?php 
 
 require_once __DIR__ . '/Models/Product.php';
-require_once __DIR__ . '/Models/Race.php';
 require_once __DIR__ . '/Data/db.php';
 
 ?>
@@ -21,7 +20,6 @@ require_once __DIR__ . '/Data/db.php';
 
 <?php 
 foreach($db as $product): 
-if (in_array("cane", $db))
 ?>
 
     <div class="card">
@@ -30,24 +28,11 @@ if (in_array("cane", $db))
             <h5 class="card-title"> <?php echo $product->item_name ?> </h5>
             <p class="card-text"> <?php echo $product->price ?> $ </p>
             <p class="card-text"> <?php echo $product->category ?> </p>
+            <p class="card-text"> <?php echo $product->animal ?> </p>
         </div>
     </div>
 <?php endforeach; ?>
 
-<?php 
-foreach($db as $product): 
-if (in_array("gatto", $db))
-?>
-
-    <div class="card">
-        <img src=" <?php echo $product->image ?> " class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title"> <?php echo $product->item_name ?> </h5>
-            <p class="card-text"> <?php echo $product->price ?> $ </p>
-            <p class="card-text"> <?php echo $product->category ?> </p>
-        </div>
-    </div>
-<?php endforeach; ?>
 
 </body>
 </html>
